@@ -16,7 +16,7 @@ class MusicLibraryController
     puts  "To quit, type 'exit'."
     puts  "What would you like to do?"
       input = gets.strip 
-    until input == "exit"
+    if input != "exit"
      call
     case input 
     when "list songs"
@@ -85,5 +85,3 @@ def play_song
 end 
 end
 
-
-  
